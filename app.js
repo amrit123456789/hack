@@ -14,7 +14,13 @@ const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const mongo = require('mongodb');
-var {mongoose} = require('./server/db/mongoose.js');
+var mongoose = require('mongoose');
+
+var db = 'mongodb://localhost:27017/hackdb';
+mongoose
+.connect(db,{useNewUrlParser:true})
+.then(()=>console.log("mongo server connected succesfully"))
+.catch(err=>console.log("error is ",err))
 
 /*
     View Engine
@@ -121,6 +127,6 @@ var timestamp = new Date().getTime();
     Fire the server online
 */
 app.set('port', (process.env.PORT || 3000));
-app.listen(app.get('port'), function() {
-	console.log('Server started on port '+ app.get('port'));
+app.listen(8000 , function() {
+	console.log('Listening on port  http://localhost:8000 ')//+ app.get('port'));
 });
