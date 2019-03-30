@@ -18,9 +18,9 @@ var mongoose = require('mongoose');
 
 var db = 'mongodb://localhost:27017/hackdb';
 mongoose
-.connect(db,{useNewUrlParser:true})
-.then(()=>console.log("mongo server connected succesfully"))
-.catch(err=>console.log("error is ",err))
+    .connect(db, { useNewUrlParser: true })
+    .then(() => console.log("mongo server connected succesfully"))
+    .catch(err => console.log("error is ", err))
 
 /*
     View Engine
@@ -31,7 +31,7 @@ app.use(express.static(__dirname + '/views'));
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(favicon(__dirname + '/public/favicon.ico'));
 // app.engine('.extenionName', renderingEngine) -> renders files
-app.engine('handlebars', exphbs({defaultLayout: 'layout'}));
+app.engine('handlebars', exphbs({ defaultLayout: 'layout' }));
 // app.set('view engine', 'engineToUse') -> sets default viewing engine
 app.set('view engine', 'handlebars');
 
@@ -39,7 +39,7 @@ app.set('view engine', 'handlebars');
     Bodyparser Middleware + Express session
 */
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 // session -> keep the user loggin after he login in on the website
 //         -> creates an object req.session, where you can add properties
@@ -60,20 +60,20 @@ app.use(passport.session());
      Validator to validate data incoming with the re object to the server
 */
 app.use(expressValidator({
-  errorFormatter: function(param, msg, value) {
-      var namespace = param.split('.')
-      , root    = namespace.shift()
-      , formParam = root;
+    errorFormatter: function (param, msg, value) {
+        var namespace = param.split('.')
+            , root = namespace.shift()
+            , formParam = root;
 
-    while(namespace.length) {
-      formParam += '[' + namespace.shift() + ']';
+        while (namespace.length) {
+            formParam += '[' + namespace.shift() + ']';
+        }
+        return {
+            param: formParam,
+            msg: msg,
+            value: value
+        };
     }
-    return {
-      param : formParam,
-      msg   : msg,
-      value : value
-    };
-  }
 }));
 
 
@@ -82,11 +82,11 @@ app.use(expressValidator({
 */
 app.use(flash());
 app.use(function (req, res, next) {
-  res.locals.success_msg = req.flash('success_msg');
-  res.locals.error_msg = req.flash('error_msg');
-  res.locals.error = req.flash('error');
-  res.locals.user = req.user || null;
-  next();
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    res.locals.user = req.user || null;
+    next();
 });
 
 /*
@@ -113,7 +113,7 @@ var settings = require('./routes/settings');
 var diseases = require('./routes/diseases');
 var rooms = require('./routes/rooms');
 
- app.use('/', login);
+app.use('/', login);
 app.use('/', appRoute);
 app.use('/', users);
 app.use('/', patients);
@@ -126,7 +126,7 @@ var timestamp = new Date().getTime();
 /*
     Fire the server online
 */
-app.set('port', (process.env.PORT || 3000));
-app.listen(8000 , function() {
-	console.log('Listening on port  http://localhost:8000 ')//+ app.get('port'));
+app.set('port', (process.env.PORT || 8000));
+app.listen(8000, function () {
+    console.log('Listening on port  http://localhost:8000 ')//+ app.get('port'));
 });

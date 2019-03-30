@@ -12,18 +12,18 @@ const express = require('express');
 const _ = require('lodash');
 const router = express.Router();
 
-var {scoreOfDisease, Disease} = require('./../server/models/diseases.js');
-var {Patient} = require('./../server/models/patient.js');
-var {rooms, Room} = require('./../server/models/rooms.js');
+var { scoreOfDisease, Disease } = require('./../server/models/diseases.js');
+var { Patient } = require('./../server/models/patient.js');
+var { rooms, Room } = require('./../server/models/rooms.js');
 var isValidDate = require('is-valid-date');
-const {ObjectID} = require('mongodb');
+const { ObjectID } = require('mongodb');
 
 
 /*
     GET /app/addpatient -> go to addPatient page
 */
 router.get('/app/addpatient', (req, res) => {
-    res.render('addpatient', {pageTitle: "Add patient"});
+    res.render('addpatient', { pageTitle: "Add patient" });
 });
 
 /*
@@ -76,7 +76,7 @@ router.post('/app/addpatient', (req, res) => {
             console.log(err);
             res.status(400).redirect('/app');
         });
-   }
+    }
 });
 
 /*
@@ -140,19 +140,19 @@ router.post('/app/updatepatient/:hospitalNumber', (req, res) => {
     Patient.findOneAndUpdate({
         hospitalNumber
     }, {
-        "$set": {
-            "diseases": PD,
-            "lastUpdate": (new Date().getTime())
-         }
-    },{
-        new: true
-    }).then((patient) => {
-        patient.updateScore();
-        res.redirect('/app/patient/' + hospitalNumber);
-    }).catch((err) => {
-        console.log(err);
-        res.redirect('/app/patient/' + hospitalNumber);
-    });
+            "$set": {
+                "diseases": PD,
+                "lastUpdate": (new Date().getTime())
+            }
+        }, {
+            new: true
+        }).then((patient) => {
+            patient.updateScore();
+            res.redirect('/app/patient/' + hospitalNumber);
+        }).catch((err) => {
+            console.log(err);
+            res.redirect('/app/patient/' + hospitalNumber);
+        });
 });
 
 /*
@@ -161,28 +161,28 @@ router.post('/app/updatepatient/:hospitalNumber', (req, res) => {
 router.get('/app/deletepatient/:hospitalNumber', (req, res) => {
     var hospitalNumber = req.params.hospitalNumber;
 
-    Promise.all([Room.find({}), Patient.findOne({hospitalNumber: hospitalNumber})])
+    Promise.all([Room.find({}), Patient.findOne({ hospitalNumber: hospitalNumber })])
         .then((data) => {
             var rooms = data[0];
             var patient = data[1];
 
             // if the patient is in a room, make the room empty
             if (patient.room !== 'noroom') {
-                 for (var i = 0; i < rooms.length; ++i) {
+                for (var i = 0; i < rooms.length; ++i) {
                     if (rooms[i].name === patient.room) {
-                         rooms[i].availability = false;
-                         rooms[i].save();
-                         break;
+                        rooms[i].availability = false;
+                        rooms[i].save();
+                        break;
                     }
-                 }
+                }
             }
 
             patient.remove().then((patients) => {
-               res.status(200).redirect('/app');
+                res.status(200).redirect('/app');
             });
-         }).catch((err) => {
+        }).catch((err) => {
             res.status(400).redirect('/app');
-         });
+        });
 });
 
 module.exports = router;
