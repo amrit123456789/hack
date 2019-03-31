@@ -1,0 +1,405 @@
+sym,index
+Heberden's node,0
+Murphy's sign,1
+Stahli's line,2
+abdomen acute,3
+abdominal bloating,4
+abdominal tenderness,5
+abnormal sensation,6
+abnormally hard consistency,7
+abortion,8
+abscess bacterial,9
+absences finding,10
+achalasia,11
+ache,12
+adverse effect,13
+adverse reaction,14
+agitation,15
+air fluid level,16
+alcohol binge episode,17
+alcoholic withdrawal symptoms,18
+ambidexterity,19
+angina pectoris,20
+anorexia,21
+anosmia,22
+aphagia,23
+apyrexial,24
+arthralgia,25
+ascites,26
+asterixis,27
+asthenia,28
+asymptomatic,29
+ataxia,30
+atypia,31
+aura,32
+awakening early,33
+barking cough,34
+bedridden,35
+behavior hyperactive,36
+behavior showing increased motor activity,37
+blackout,38
+blanch,39
+bleeding of vagina,40
+bowel sounds decreased,41
+bradycardia,42
+bradykinesia,43
+breakthrough pain,44
+breath sounds decreased,45
+breath-holding spell,46
+breech presentation,47
+bruit,48
+burning sensation,49
+cachexia,50
+cardiomegaly,51
+cardiovascular event,52
+cardiovascular finding,53
+catatonia,54
+catching breath,55
+charleyhorse,56
+chest discomfort,57
+chest tightness,58
+chill,59
+choke,60
+cicatrisation,61
+clammy skin,62
+claudication,63
+clonus,64
+clumsiness,65
+colic abdominal,66
+consciousness clear,67
+constipation,68
+coordination abnormal,69
+cough,70
+cushingoid facies,71
+cushingoidÂ habitus,72
+cyanosis,73
+cystic lesion,74
+debilitation,75
+decompensation,76
+decreased body weight,77
+decreased stool caliber,78
+decreased translucency,79
+diarrhea,80
+difficulty,81
+difficulty passing urine,82
+disequilibrium,83
+distended abdomen,84
+distress respiratory,85
+disturbed family,86
+dizziness,87
+dizzy spells,88
+drool,89
+drowsiness,90
+dullness,91
+dysarthria,92
+dysdiadochokinesia,93
+dysesthesia,94
+dyspareunia,95
+dyspnea,96
+dyspnea on exertion,97
+dysuria,98
+ecchymosis,99
+egophony,100
+elation,101
+emphysematous change,102
+energy increased,103
+enuresis,104
+erythema,105
+estrogen use,106
+excruciating pain,107
+exhaustion,108
+extrapyramidal sign,109
+extreme exhaustion,110
+facial paresis,111
+fall,112
+fatigability,113
+fatigue,114
+fear of falling,115
+fecaluria,116
+feces in rectum,117
+feeling hopeless,118
+feeling strange,119
+feeling suicidal,120
+feels hot/feverish,121
+fever,122
+flare,123
+flatulence,124
+floppy,125
+flushing,126
+focal seizures,127
+food intolerance,128
+formication,129
+frail,130
+fremitus,131
+frothy sputum,132
+gag,133
+gasping for breath,134
+general discomfort,135
+general unsteadiness,136
+giddy mood,137
+gravida 0,138
+gravida 10,139
+green sputum,140
+groggy,141
+guaiac positive,142
+gurgle,143
+hacking cough,144
+haemoptysis,145
+haemorrhage,146
+hallucinations auditory,147
+hallucinations visual,148
+has religious belief,149
+headache,150
+heartburn,151
+heavy feeling,152
+heavy legs,153
+hematochezia,154
+hematocrit decreased,155
+hematuria,156
+heme positive,157
+hemianopsia homonymous,158
+hemiplegia,159
+hemodynamically stable,160
+hepatomegaly,161
+hepatosplenomegaly,162
+hirsutism,163
+history of - blackout,164
+hoard,165
+hoarseness,166
+homelessness,167
+homicidal thoughts,168
+hot flush,169
+hunger,170
+hydropneumothorax,171
+hyperacusis,172
+hypercapnia,173
+hyperemesis,174
+hyperhidrosis disorder,175
+hyperkalemia,176
+hypersomnia,177
+hypersomnolence,178
+hypertonicity,179
+hyperventilation,180
+hypesthesia,181
+hypoalbuminemia,182
+hypocalcemia result,183
+hypokalemia,184
+hypokinesia,185
+hypometabolism,186
+hyponatremia,187
+hypoproteinemia,188
+hypotension,189
+"hypothermia, natural",190
+hypotonic,191
+hypoxemia,192
+immobile,193
+impaired cognition,194
+inappropriate affect,195
+incoherent,196
+indifferent mood,197
+intermenstrual heavy bleeding,198
+intoxication,199
+irritable mood,200
+jugular venous distention,201
+labored breathing,202
+lameness,203
+large-for-dates fetus,204
+leftÂ atrialÂ hypertrophy,205
+lesion,206
+lethargy,207
+lightheadedness,208
+lip smacking,209
+loose associations,210
+low back pain,211
+lung nodule,212
+macerated skin,213
+macule,214
+malaise,215
+mass in breast,216
+mass of body structure,217
+mediastinal shift,218
+mental status changes,219
+metastatic lesion,220
+milky,221
+moan,222
+monoclonal,223
+monocytosis,224
+mood depressed,225
+moody,226
+motor retardation,227
+muscle hypotonia,228
+muscle twitch,229
+myalgia,230
+mydriasis,231
+myoclonus,232
+nasal discharge present,233
+nasal flaring,234
+nausea,235
+nausea and vomiting,236
+neck stiffness,237
+neologism,238
+nervousness,239
+night sweat,240
+nightmare,241
+no known drug allergies,242
+no status change,243
+noisy respiration,244
+non-productive cough,245
+nonsmoker,246
+numbness,247
+numbness of hand,248
+oliguria,249
+orthopnea,250
+orthostasis,251
+out of breath,252
+overweight,253
+pain,254
+pain abdominal,255
+pain back,256
+pain chest,257
+pain foot,258
+pain in lower limb,259
+pain neck,260
+painful swallowing,261
+pallor,262
+palpitation,263
+panic,264
+pansystolic murmur,265
+para 1,266
+para 2,267
+paralyse,268
+paraparesis,269
+paresis,270
+paresthesia,271
+passed stones,272
+patient non compliance,273
+pericardial friction rub,274
+phonophobia,275
+photophobia,276
+photopsia,277
+pin-point pupils,278
+pleuritic pain,279
+pneumatouria,280
+polydypsia,281
+polymyalgia,282
+polyuria,283
+poor dentition,284
+poor feeding,285
+posteriorÂ rhinorrhea,286
+posturing,287
+presence of q wave,288
+pressure chest,289
+previous pregnancies 2,290
+primigravida,291
+prodrome,292
+productive cough,293
+projectile vomiting,294
+prostate tender,295
+prostatism,296
+proteinemia,297
+pruritus,298
+pulse absent,299
+pulsusÂ paradoxus,300
+pustule,301
+qt interval prolonged,302
+r wave feature,303
+rale,304
+rambling speech,305
+rapid shallow breathing,306
+red blotches,307
+redness,308
+regurgitates after swallowing,309
+renal angle tenderness,310
+rest pain,311
+retch,312
+retropulsion,313
+rhd positive,314
+rhonchus,315
+rigor - temperature-associated observation,316
+rolling of eyes,317
+room spinning,318
+satiety early,319
+scar tissue,320
+sciatica,321
+scleralÂ icterus,322
+scratch marks,323
+sedentary,324
+seizure,325
+sensory discomfort,326
+shooting pain,327
+shortness of breath,328
+side pain,329
+sinus rhythm,330
+sleeplessness,331
+sleepy,332
+slowing of urinary stream,333
+sneeze,334
+sniffle,335
+snore,336
+snuffle,337
+soft tissue swelling,338
+sore to touch,339
+spasm,340
+speech slurred,341
+splenomegaly,342
+spontaneous rupture of membranes,343
+sputum purulent,344
+st segment depression,345
+st segment elevation,346
+stiffness,347
+stinging sensation,348
+stool color yellow,349
+stridor,350
+stuffy nose,351
+stupor,352
+suicidal,353
+superimposition,354
+sweat,355
+sweating increased,356
+swelling,357
+symptom aggravating factors,358
+syncope,359
+systolic ejection murmur,360
+systolic murmur,361
+t wave inverted,362
+tachypnea,363
+tenesmus,364
+terrify,365
+thicken,366
+throat sore,367
+throbbing sensation quality,368
+tinnitus,369
+tired,370
+titubation,371
+todd paralysis,372
+tonic seizures,373
+transaminitis,374
+transsexual,375
+tremor,376
+tremor resting,377
+tumor cell invasion,378
+unable to concentrate,379
+unconscious state,380
+uncoordination,381
+underweight,382
+unhappy,383
+unresponsiveness,384
+unsteady gait,385
+unwell,386
+urge incontinence,387
+urgency ofÂ micturition,388
+urinary hesitation,389
+urinoma,390
+verbal auditory hallucinations,391
+verbally abusive behavior,392
+vertigo,393
+vision blurred,394
+vomiting,395
+weepiness,396
+weight gain,397
+welt,398
+wheelchair bound,399
+wheezing,400
+withdraw,401
+worry,402
+yellow sputum,403
